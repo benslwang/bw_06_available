@@ -35,3 +35,17 @@ def sum_numbers(*args):
 
 result = sum_numbers(1, 2, 3, 4)
 print(result)
+
+
+# 元祖和字典的拆包
+def demo1(*args, **kwargs):
+
+    print(args)
+    print(kwargs)
+
+
+gl_muns = (1, 2, 3)
+gl_dict = {"name": "小明", "age": 18}
+
+# 拆包的方式是：在元祖变量前，增加一个*；在字典变量前，增加两个*
+demo1(*gl_muns, **gl_dict)
