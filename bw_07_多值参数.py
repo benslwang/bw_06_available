@@ -21,6 +21,7 @@ def demo(num, *nums, **person):
 demo(1, 2, 3, 4, 5, name="小明", age=18)
 
 
+# 多值参数求和
 def sum_numbers(*args):
     num = 0
 
